@@ -15,7 +15,7 @@ import modele.Client;
 import modele.Session;
 
 /**
- *
+ * Voler n'est pas bon.
  * @author Philippe Eros, Le Gallou Logan, Pereira Lucas
  */
 public class MainApp extends Application
