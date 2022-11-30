@@ -16,7 +16,7 @@ import modele.Session;
 
 /**
  *
- * @author EROS Philippe
+ * @author Philippe Eros, Le Gallou Logan, Pereira Lucas
  */
 public class MainApp extends Application
 {
