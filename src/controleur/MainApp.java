@@ -11,11 +11,10 @@ import javafx.scene.control.Button;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.StackPane;
 import javafx.stage.Stage;
-import modele.Client;
-import modele.Session;
+import modele.*;
+
 
 /**
- * Voler n'est pas bon.
  * @author Philippe Eros, Le Gallou Logan, Pereira Lucas
  */
 public class MainApp extends Application
@@ -34,8 +33,8 @@ public class MainApp extends Application
         this.primaryStage = primaryStage;
         try
         {
-            this.primaryStage.setTitle("Gestion des inscriptions aux sessions de formations");
-            FXMLLoader loader = new FXMLLoader(MainApp.class.getResource("/vue/FenFXML_Inscription.fxml"));
+            this.primaryStage.setTitle("Menu principal");
+            FXMLLoader loader = new FXMLLoader(MainApp.class.getResource("/vue/FenFXML_Menu.fxml"));
             AnchorPane rootLayout = (AnchorPane) loader.load();
             Scene scene = new Scene(rootLayout);
             primaryStage.setScene(scene);
