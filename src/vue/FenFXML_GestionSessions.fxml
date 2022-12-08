@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="controleur.FenFXML_GestionSessionsController">
+   <children>
+      <Label layoutX="68.0" layoutY="49.0" text="LISTE DES SESSIONS A VENIR">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
+      <TableView layoutX="33.0" layoutY="118.0" prefHeight="200.0" prefWidth="530.0">
+        <columns>
+          <TableColumn prefWidth="34.0" text="ID" />
+          <TableColumn prefWidth="123.0" text="Libelle" />
+            <TableColumn prefWidth="133.0" text="Niveau" />
+            <TableColumn prefWidth="90.0" text="Date début" />
+            <TableColumn prefWidth="74.0" text="Nb places" />
+            <TableColumn prefWidth="75.0" text="Nb inscrits" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>
