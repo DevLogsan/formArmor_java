@@ -40,4 +40,22 @@ public class FenFXML_MenuController implements Initializable {
             System.out.println("Erreur chargement fenetre Inscription : " + e.getMessage());
         }
     }
+    
+    public void handleGestionSessions()
+    {
+        try
+        {
+            primaryStage = new Stage();
+            primaryStage.setTitle("Gestion des sessions");
+            FXMLLoader loader = new FXMLLoader(MainApp.class.getResource("/vue/FenFXML_GestionSessions.fxml"));
+            AnchorPane rootLayout = (AnchorPane) loader.load();
+            Scene scene = new Scene(rootLayout);
+            primaryStage.setScene(scene);
+            primaryStage.show();
+        }
+        catch (IOException e)
+        {
+            System.out.println("Erreur chargement fenetre Gestion sessions : " + e.getMessage());
+        }
+    }
 }

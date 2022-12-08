@@ -19,7 +19,7 @@
             <Font size="18.0" />
          </font>
       </Button>
-      <Button layoutX="429.0" layoutY="283.0" mnemonicParsing="false" text="Sessions">
+      <Button layoutX="429.0" layoutY="283.0" mnemonicParsing="false" onAction="#handleGestionSessions" text="Sessions">
          <font>
             <Font size="18.0" />
          </font>
