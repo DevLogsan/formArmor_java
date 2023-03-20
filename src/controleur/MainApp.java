@@ -1,4 +1,3 @@
-
 package controleur;
 
 import java.io.IOException;
@@ -26,6 +25,9 @@ public class MainApp extends Application
     private static Session maSessionSelectionne;
     // Pour conserver le client sélectionné dans le ComboBox de la fenêtre inscription
     private static Client monClientSelectionne;
+    
+    // Pour conserver la session sélectionnée dans le TableView de la fenêtre gestion sessions
+    private static Session maSessionGestionSelectionnee;
     
     @Override
     public void start(Stage primaryStage)
@@ -69,6 +71,17 @@ public class MainApp extends Application
     {
         return monClientSelectionne;
     }
+    
+    // Getter et Setter pour l'item selectionné dans le tableView des sessions (fenetre Gestion Sessions)
+    public static void setMaSessionGestionSelectionnee(Session maSessionGestion)
+    {
+        maSessionGestionSelectionnee = maSessionGestion;
+    }
+    public static Session getMaSessionGestionSelectionnee()
+    {
+        return maSessionGestionSelectionnee;
+    }
+    
     /**
      * @param args the command line arguments
      */
