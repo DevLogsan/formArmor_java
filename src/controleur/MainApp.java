@@ -20,6 +20,7 @@ public class MainApp extends Application
 {
     private Stage primaryStage;
     private Stage secondaryStage;
+    private Session maSessionSelectionnee;
     
     // Pour conserver la session sélectionnée dans le TableView de la fenêtre inscription
     private static Session maSessionSelectionne;
@@ -80,6 +81,14 @@ public class MainApp extends Application
     public static Session getMaSessionGestionSelectionnee()
     {
         return maSessionGestionSelectionnee;
+    }
+    
+    public static Session getMaSessionSelectionne() {
+        return maSessionSelectionne;
+    }
+
+    public static void setMaSessionSelectionne(Session maSessionSelectionne) {
+        MainApp.maSessionSelectionne = maSessionSelectionne;
     }
     
     /**

@@ -9,7 +9,11 @@ public class Client
 {
     private int id, statut_id, nbhcpta, nbhbur;
     private String nom, password, adresse, cp, ville, email;
-
+  
+    // Variable concernant les participants.
+    private String type;
+    private Double taux_horaire;
+    
     public Client()
     {
     }
@@ -26,6 +30,17 @@ public class Client
         this.cp = cp;
         this.ville = ville;
         this.email = email;
+    }
+    
+    // Constructeur utilisé lors de l'appel de la page 'Participant ayant assisté à cette formation' pour compléter le tableau de la page
+    public Client(String type, String nom, String adresse, String ville, String email, Double taux_horaire)
+    {
+        this.type = type;
+        this.nom = nom;
+        this.adresse = adresse;
+        this.ville = ville;
+        this.email = email;
+        this.taux_horaire = taux_horaire;
     }
     
     public int getId()
@@ -116,6 +131,22 @@ public class Client
     public void setEmail(String email)
     {
         this.email = email;
+    }
+    public String getType()
+    {
+        return type;
+    }
+    public void setType(String type)
+    {
+        this.type = type;
+    }
+    public Double getTaux_horaire()
+    {
+        return taux_horaire;
+    }
+    public void setTaux_horaire(Double taux_horaire)
+    {
+        this.taux_horaire = taux_horaire;
     }
     @Override
     public String toString()

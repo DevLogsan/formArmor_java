@@ -78,9 +78,6 @@ public class FenFXML_ParticipantsSessionController implements Initializable {
             Titre.setSpacingBefore(25);
             Titre.setAlignment(Element.ALIGN_CENTER);
             document.add(Titre);
-            
-            //A FAIRE : changer la taille du font des cellules du Table
-            
 
             //TABLE
             PdfPTable pdfPTable = new PdfPTable(4);
