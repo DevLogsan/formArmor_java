@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="750.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controleur.FenFXML_ParticipantsSessionController">
+   <children>
+      <Label layoutX="60.0" layoutY="31.0" text="LISTE DES PARTICIPANTS A LA SESSION">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
+      <TableView id="tvParticipants" fx:id="tvParticipants" layoutX="60.0" layoutY="102.0" prefHeight="210.0" prefWidth="631.0">
+        <columns>
+          <TableColumn id="tcNom" fx:id="tcNom" prefWidth="198.0" text="Nom" />
+          <TableColumn id="tcAdresse" fx:id="tcAdresse" minWidth="0.0" prefWidth="210.0" text="Adresse" />
+            <TableColumn id="tcEmail" fx:id="tcEmail" prefWidth="222.0" text="Email" />
+        </columns>
+      </TableView>
+      <Button id="btnGenererPdf" fx:id="btnGenererPdf" layoutX="285.0" layoutY="329.0" mnemonicParsing="false" onAction="#handleGenererPdf" text="GENERER PDF">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

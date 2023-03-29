@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controleur.FenFXML_SessionAcheveeControleur">
+   <children>
+      <Label fx:id="lblSessions" layoutX="127.0" layoutY="49.0" text="LISTE DES SESSIONS ACHEVEES">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <TableView fx:id="tvSession" layoutX="24.0" layoutY="120.0" onMouseClicked="#handleBtnActif" prefHeight="200.0" prefWidth="553.0">
+        <columns>
+          <TableColumn fx:id="tcId" prefWidth="75.0" text="id" />
+          <TableColumn fx:id="tcFormation" prefWidth="75.0" text="Formation" />
+            <TableColumn fx:id="tcDebut" prefWidth="126.0" text="Debut formation" />
+            <TableColumn fx:id="tcPlace" prefWidth="131.0" text="Place" />
+            <TableColumn fx:id="tcInscrit" prefWidth="145.0" text="Inscrit" />
+        </columns>
+      </TableView>
+      <Button fx:id="btnDetails" layoutX="274.0" layoutY="345.0" mnemonicParsing="false" onAction="#handleDetails" text="Détails" />
+   </children>
+</AnchorPane>
