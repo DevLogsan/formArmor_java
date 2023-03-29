@@ -39,7 +39,8 @@ import modele.Session;
 public class FenFXML_ParticipantsSessionController implements Initializable {
     Session laSessionSelectionnee = MainApp.getMaSessionGestionSelectionnee();
     ObservableList<Client> lesClients = GestionSqlSessions.getLesParticipants(laSessionSelectionnee.getId());
-    String cheminPdf = "C:\\Users/E/Downloads/ListeParticipants_" + laSessionSelectionnee.getLibFormation() + "_" + laSessionSelectionnee.getDate_debut() + ".pdf";
+    String home = System.getProperty("user.home");
+    String cheminPdf = home + "/Downloads/ListeParticipants_" + laSessionSelectionnee.getLibFormation() + "_" + laSessionSelectionnee.getDate_debut() + ".pdf";
     
     @FXML
     private TableView<Client> tvParticipants;
